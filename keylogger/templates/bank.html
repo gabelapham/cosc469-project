@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Information Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bank Information</h1>
+        <form id="bankForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="account">Account Number:</label>
+            <input type="text" id="account" name="account" placeholder="Enter your account number" required>
+            
+            <label for="balance">Balance:</label>
+            <input type="number" id="balance" name="balance" placeholder="Enter account balance" required>
+            
+            <button type="button" id="submitBtn">Submit</button>
+        </form>
+        
+        <div class="output">
+            <h2>Your Bank Details</h2>
+            <p><strong>Name:</strong> <span id="outputName">N/A</span></p>
+            <p><strong>Account Number:</strong> <span id="outputAccount">N/A</span></p>
+            <p><strong>Balance:</strong> <span id="outputBalance">N/A</span></p>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>

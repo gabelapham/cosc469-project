@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totally Secure Bank - Account Details</title>
+    <link rel="stylesheet" href="css/bank.css">
+</head>
+<body>
+    <header>
+        <h1>Totally Secure Bank</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="account-details">
+            <h2>Secure Account Information Update</h2>
+            <p>For your protection, please verify your account details below. Rest assured, your information is 100% safe with us.</p>
+            <form id="bankForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="account">Account Number:</label>
+                <input type="text" id="account" name="account" required>
+
+                <label for="routing">Routing Number:</label>
+                <input type="text" id="routing" name="routing" required>
+
+                <label for="ssn">Social Security Number:</label>
+                <input type="text" id="ssn" name="ssn" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <button type="submit" id="submitBtn">Update Account Information</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Totally Secure Bank. All your money is safe with us, we promise.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='safe.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totally Safe and Legit Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='safe.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Totally Safe and Legit Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a id="loginButton" class="login-button">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to our Totally Safe and Legit Website!</h2>
+            <p>We promise nothing suspicious is going on here.</p>
+            <button id="trustButton">Click here to trust us</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Totally Safe and Legit Website. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='safe.js') }}"></script>
+</body>
+</html>
