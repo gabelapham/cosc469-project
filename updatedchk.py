@@ -11,7 +11,7 @@ def check_url(url):
         return is_phishing_url(f"http://{url}")
 
 def is_phishing_url(url):
-    safeBrowse = SafeBrowsing("AIzaSyCn-O7mE1Cgv5Nwxx7GbuO9PMSJc3UWM6Q") # Google Safe Browsing API Key
+    safeBrowse = SafeBrowsing("put api key") # Google Safe Browsing API Key
     result = safeBrowse.lookup_urls([url])
     if result and result[url]["malicious"]:
         return True
